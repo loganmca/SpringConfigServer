@@ -1,2 +1,7 @@
 server:
   port: 8090
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://logu.com:8761/eureka 
