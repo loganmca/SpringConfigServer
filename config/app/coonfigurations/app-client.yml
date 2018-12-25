@@ -40,3 +40,9 @@ logging:
     root: info
 #most of the endpoints are not exposed by Actuator by default. You need to change your configuration in application.properties to expose them    
 #management.endpoints.web.exposure.include=*    
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - *
