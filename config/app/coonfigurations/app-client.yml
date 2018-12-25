@@ -44,5 +44,4 @@ management:
   endpoints:
     web:
       exposure:
-        include:
-        - *
+        include: ${test.bar:#{*}}
