@@ -30,7 +30,11 @@ spring:
   properties:
     hibernate:
       dialect: org.hibernate.dialect.MySQL5Dialect    
-#Enabled Logging and setted log level        
+  #Spring Boot Admin Client URL
+  boot:
+    admin:
+      client:
+        url: http://localhost:8091      
 logging:
   level:
     root: info
