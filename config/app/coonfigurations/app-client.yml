@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka 
+      defaultZone: http://logu.com:8761/eureka 
 
 spring:
   datasource:
@@ -38,3 +38,9 @@ spring:
 logging:
   level:
     root: info
+#most of the endpoints are not exposed by Actuator by default. You need to change your configuration in application.properties to expose them    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *    
